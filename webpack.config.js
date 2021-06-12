@@ -17,7 +17,7 @@ module.exports = {
     host: "localhost",
     port: 3000,
   },
-  plugin: [
+  plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html",
     }),

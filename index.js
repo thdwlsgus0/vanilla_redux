@@ -1,8 +1,14 @@
 import { createStore } from "redux";
-import { divToggle, counter, btnIncrease, btnDecrease } from "./dom.js";
+import {
+  divToggle,
+  counter,
+  btnIncrease,
+  btnDecrease,
+  btnMultiply,
+} from "./dom.js";
 import { reducer } from "./reducer.js";
-import { toggleSwitch, increase, decrease } from "./action.js";
-import css from "index.css";
+import { toggleSwitch, increase, decrease, multiply } from "./action.js";
+import css from "./index.css";
 const store = createStore(reducer);
 
 const render = () => {
@@ -29,4 +35,8 @@ btnIncrease.addEventListener("click", (e) => {
 
 btnDecrease.addEventListener("click", (e) => {
   store.dispatch(decrease());
+});
+
+btnMultiply.addEventListener("click", (e) => {
+  store.dispatch(multiply());
 });
