@@ -2,6 +2,7 @@ import { createStore } from "redux";
 import { divToggle, counter, btnIncrease, btnDecrease } from "./dom.js";
 import { reducer } from "./reducer.js";
 import { toggleSwitch, increase, decrease } from "./action.js";
+import css from "index.css";
 const store = createStore(reducer);
 
 const render = () => {
