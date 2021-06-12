@@ -2,6 +2,6 @@ const TOGGLE_SWITCH = "TOGGLE_SWITCH";
 const INCREASE = "INCREASE";
 const DECREASE = "DECREASE";
 
-const toggleSwitch = () => ({ type: TOGGLE_SWITCH });
-const increase = () => ({ type: INCREASE });
-const decrease = () => ({ type: DECREASE });
+export const toggleSwitch = () => ({ type: TOGGLE_SWITCH });
+export const increase = () => ({ type: INCREASE });
+export const decrease = () => ({ type: DECREASE });
