@@ -1,4 +1,3 @@
-import { strictEqual } from "assert";
 import { createStore } from "redux";
 import { divToggle, counter, btnIncrease, btnDecrease } from "./dom.js";
 import { reducer } from "./reducer.js";
